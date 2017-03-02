@@ -13,15 +13,15 @@ namespace Febonacci
             int a = 0;
             Console.Write("Введите целое число: ");
             if (!int.TryParse(Console.ReadLine(), out a))
-                a = Get_i();
+                return -1;
             return a;
         }
-        
+
         static string Generate(int n, string str = "", int a = 0, int b = 1)
         {
             int k;
             str += b.ToString();
-            n-= b.ToString().Length;
+            n -= b.ToString().Length;
             k = a + b;
             a = b;
             b = k;
@@ -33,12 +33,14 @@ namespace Febonacci
 
         static char GetNum(int n)
         {
-            return Generate(n)[n-1];
+            return Generate(n)[n - 1];
         }
 
         static void Main(string[] args)
         {
-            int a = Get_i();
+            int a = -1;
+            while (a < 0)
+                a = Get_i();
             Console.WriteLine(GetNum(a));
             Console.ReadKey();
         }
