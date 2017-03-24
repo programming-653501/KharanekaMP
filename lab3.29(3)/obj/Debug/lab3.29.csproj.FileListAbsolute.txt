@@ -1,0 +1,6 @@
+E:\Projects2017\labspogr\lab3.29\bin\Debug\lab3.29.exe.config
+E:\Projects2017\labspogr\lab3.29\bin\Debug\lab3.29.exe
+E:\Projects2017\labspogr\lab3.29\bin\Debug\lab3.29.pdb
+E:\Projects2017\labspogr\lab3.29\obj\Debug\lab3.29.csprojResolveAssemblyReference.cache
+E:\Projects2017\labspogr\lab3.29\obj\Debug\lab3.29.exe
+E:\Projects2017\labspogr\lab3.29\obj\Debug\lab3.29.pdb

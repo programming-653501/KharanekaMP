@@ -1,0 +1,6 @@
+E:\Projects2017\labspogr\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\Projects2017\labspogr\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\Projects2017\labspogr\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\Projects2017\labspogr\ConsoleApp1\obj\Debug\lab4.1.29.csprojResolveAssemblyReference.cache
+E:\Projects2017\labspogr\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\Projects2017\labspogr\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
