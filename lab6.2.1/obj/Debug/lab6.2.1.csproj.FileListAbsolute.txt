@@ -1,0 +1,9 @@
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\lab6.2.1.exe.config
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\lab6.2.1.exe
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\lab6.2.1.pdb
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\Books.dll
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\Books.pdb
+E:\Projects2017\labspogr\lab6.2.1\obj\Debug\lab6.2.1.csprojResolveAssemblyReference.cache
+E:\Projects2017\labspogr\lab6.2.1\obj\Debug\lab6.2.1.exe
+E:\Projects2017\labspogr\lab6.2.1\obj\Debug\lab6.2.1.pdb
+E:\Projects2017\labspogr\lab6.2.1\bin\Debug\System.ValueTuple.dll
