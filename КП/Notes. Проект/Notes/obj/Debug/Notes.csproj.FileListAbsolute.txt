@@ -1,0 +1,14 @@
+E:\Projects\Notes\Notes\Notes\bin\Debug\Notes.exe.config
+E:\Projects\Notes\Notes\Notes\bin\Debug\Notes.exe
+E:\Projects\Notes\Notes\Notes\bin\Debug\Notes.pdb
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.csprojResolveAssemblyReference.cache
+E:\Projects\Notes\Notes\Notes\obj\Debug\MainWindow.g.cs
+E:\Projects\Notes\Notes\Notes\obj\Debug\App.g.cs
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes_MarkupCompile.cache
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes_MarkupCompile.lref
+E:\Projects\Notes\Notes\Notes\obj\Debug\MainWindow.baml
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.g.resources
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.Properties.Resources.resources
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.csproj.GenerateResource.Cache
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.exe
+E:\Projects\Notes\Notes\Notes\obj\Debug\Notes.pdb
