@@ -1,0 +1,23 @@
+﻿
+#ifndef _LAB7_HASHTABLE_H_
+#define _LAB7_HASHTABLE_H_
+
+#include "vcl.h"
+#include "Zap.h"
+
+class Table
+{
+	Zap* tbl;
+
+public:
+
+	Table();
+	UnicodeString* ToPrint();
+	void Cut(Table* &tb1, Table* &tb2, int num);
+	static int h(int);
+	void Add(Zap* data);
+	Zap* Find(int);
+
+};
+
+#endif

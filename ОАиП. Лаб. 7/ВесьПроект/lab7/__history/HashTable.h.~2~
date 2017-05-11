@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+
+#ifndef HashTableH
+#define HashTableH
+//---------------------------------------------------------------------------
+#endif
+#include "vcl.h"
+using namespace std;
+
+class Zap
+{
+public:
+	Zap(int key, int info);
+	Zap();
+	int key;
+	int info;
+	Zap* next;
+	bool isFull;
+};
+
+class Table
+{
+	Zap* tbl;
+public:
+	Table();
+	UnicodeString* ToPrint();
+	void Cut(Table* &tb1, Table* &tb2, int num);
+	static int h(int);
+	void Add(Zap* data);
+	Zap* Find(int);
+
+};

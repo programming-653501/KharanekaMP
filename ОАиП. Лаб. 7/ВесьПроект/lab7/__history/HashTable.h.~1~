@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef HashTableH
+#define HashTableH
+//---------------------------------------------------------------------------
+#endif
+#include "vcl.h"
+using namespace std;
+
+class Zap
+{
+public:
+	int key;
+	int info;
+	Zap* next;
+	bool isFull;
+};
+
+class Table
+{
+	Zap* tbl;
+public:
+	Table();
+	static int h(Zap* data);
+	void Add(Zap* data);
+
+};
