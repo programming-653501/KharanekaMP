@@ -1,6 +1,0 @@
-E:\Projects2017\labspogr\lab5.1.30\obj\Debug\lab5.1.30.csprojResolveAssemblyReference.cache
-E:\Projects2017\labspogr\lab5.1.30\bin\Debug\lab5.1.30.exe.config
-E:\Projects2017\labspogr\lab5.1.30\bin\Debug\lab5.1.30.exe
-E:\Projects2017\labspogr\lab5.1.30\bin\Debug\lab5.1.30.pdb
-E:\Projects2017\labspogr\lab5.1.30\obj\Debug\lab5.1.30.exe
-E:\Projects2017\labspogr\lab5.1.30\obj\Debug\lab5.1.30.pdb

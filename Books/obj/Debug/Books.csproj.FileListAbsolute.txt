@@ -1,6 +1,0 @@
-E:\Projects2017\labspogr\Books\bin\Debug\Books.dll
-E:\Projects2017\labspogr\Books\bin\Debug\Books.pdb
-E:\Projects2017\labspogr\Books\obj\Debug\Books.dll
-E:\Projects2017\labspogr\Books\obj\Debug\Books.pdb
-E:\Projects2017\labspogr\Books\obj\Debug\Books.csprojResolveAssemblyReference.cache
-E:\Projects2017\labspogr\Books\bin\Debug\System.ValueTuple.dll

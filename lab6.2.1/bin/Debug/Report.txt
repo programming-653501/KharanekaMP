@@ -1,5 +1,0 @@
-Overall number of books: 150
-Overall cost of books: 44625
-Overall number of sales: 3
-Overall number of sold books: 49
-Overall income: 5868
