@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Карусель</title>
+		<link rel="stylesheet" type="text/css" href="css/Styles.css"/>
+		<script src="js/jQuery.js"></script>
+		<script src="js/tmdb.js"></script>
+		<script src="js/task.js"></script>
+	</head>
+	<body>
+		<div id="spin">
+			<form id="queryAndButton">
+				<input type="text" id="query" required>
+				<input type="button" id="search" value="search"><br />
+			</form>
+			<div id="buttons">
+				<input type="button" id="left" class="mainButton" value="<" disabled>
+				<input type="button" id="right" class="mainButton" value=">">
+			</div>
+			<article id="content">
+				<div id="title">
+					<H2></H2>
+				</div>
+				<div>
+					<img src="" />
+					<table id="info">
+						<tr><td>Название</td><td id="tTitle"></td></tr>
+						<tr><td>Оригинальное название</td><td id="oTitle"></td></tr>
+						<tr><td>Дата выхода</td><td id="year"></td></tr>
+						<tr><td>Рейтинг</td><td id="rate"></td></tr>
+						<tr><td>Популярность</td><td id="popularity"></td></tr>
+						<tr><td>Оценок</td><td id="voteCount"></td></tr>
+						<tr><td>Язык оригинала</td><td id="oLanguage"></td></tr>
+					</table>
+				</div>
+				<div id="description">
+					<div>
+						<h3>Описание</h3>
+					</div>
+					<div id="review"></div>
+				</div>
+			</article>
+		</div>
+	</body>
+</html>
