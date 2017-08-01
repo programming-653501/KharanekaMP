@@ -2,6 +2,7 @@ $(document).ready( function () {
 	
 	document.getElementById("content").style.display = "none";
 	var activeMovie = 0;
+	var wasEmpty = false;
 	var movies;
 	var animationFlag = false;
 	
@@ -13,6 +14,10 @@ $(document).ready( function () {
 		
 		setTimeout( function () {
 			$("#content").fadeIn(700, function () {animationFlag = false;});
+			if (wasEmpty) {
+				$("#content div").not("#title").fadeIn(700);
+				wasEmpty = false;
+			};
 			$("#title H2").html(film.title);
 			if (film.poster_path !== null) {
 				$("#content img").attr("src", "http://image.tmdb.org/t/p/w185" + film.poster_path);
@@ -82,6 +87,15 @@ $(document).ready( function () {
 		tmdb.call("/search/movie", {
 			"query" : query
 		}, function (data) {
+			if (data.total_results === 0) {
+				$("#content").fadeIn(700);
+				setTimeout( function () {
+					$("#content H2").html("По вашему запросу ничего не найдено..");
+				}, 700);
+				wasEmpty = true;
+				$("#content div").not("#title").fadeOut(300);
+				return;
+			};
 			movies = data.results;
 			activeMovie = 0;
 			filling(movies[0]);
