@@ -1,4 +1,4 @@
-$(document).ready( function () {
+﻿$(document).ready( function () {
 	
 	document.getElementById("content").style.display = "none";
 	var activeMovie = 0;
@@ -6,14 +6,11 @@ $(document).ready( function () {
 	var movies;
 	var animationFlag = false;
 	
-	console.log(carousel_cfg);
-	
 	var filling = function(film) { // Функция заполнения карусели.
 		if (typeof film.poster_path !== "undefined" && film.poster_path !== null) {
 			var img = new Image();
 			img.src = carousel_cfg.picturesPath + film.poster_path; // Загружаем картинку в кэш, пока следует анимация.
 		}
-		console.log(film);
 		
 		setTimeout( function () {
 			$("#content").fadeIn(carousel_cfg.fadingTime, function () {animationFlag = false;});
