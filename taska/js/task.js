@@ -6,21 +6,24 @@ $(document).ready( function () {
 	var movies;
 	var animationFlag = false;
 	
+	console.log(carousel_cfg);
+	
 	var filling = function(film) { // Функция заполнения карусели.
-		if (film.poster_path !== null) {
+		if (typeof film.poster_path !== "undefined" && film.poster_path !== null) {
 			var img = new Image();
-			img.src = "http://image.tmdb.org/t/p/w185" + film.poster_path; // Загружаем картинку в кэш, пока следует анимация.
+			img.src = carousel_cfg.picturesPath + film.poster_path; // Загружаем картинку в кэш, пока следует анимация.
 		}
+		console.log(film);
 		
 		setTimeout( function () {
-			$("#content").fadeIn(700, function () {animationFlag = false;});
+			$("#content").fadeIn(carousel_cfg.fadingTime, function () {animationFlag = false;});
 			if (wasEmpty) {
-				$("#content div").not("#title").fadeIn(700);
+				$("#content div").not("#title").fadeIn(carousel_cfg.fadingTime);
 				wasEmpty = false;
 			};
 			$("#title H2").html(film.title);
-			if (film.poster_path !== null) {
-				$("#content img").attr("src", "http://image.tmdb.org/t/p/w185" + film.poster_path);
+			if (typeof film.poster_path !== "undefined" && film.poster_path !== null) {
+				$("#content img").attr("src", carousel_cfg.picturesPath + film.poster_path);
 			}
 			else {
 				$("#content img").attr("src", "resources/no_title.png");
@@ -33,7 +36,7 @@ $(document).ready( function () {
 			$("#oLanguage").html(film.original_language);
 			$("#voteCount").html(film.vote_count);
 			$("#review").html(film.overview);
-		}, 700);
+		}, carousel_cfg.fadingTime);
 	};
 	
 	var randInt = function (min, max) { // Целое рандомное число.
@@ -47,7 +50,7 @@ $(document).ready( function () {
 							// и необязательно по порядку, будем считать количество обработанных запросов, пока не достигнут 5.
 		tmdb.call("/movie/latest", {language : "en-US"}, function (data) { // Получаем последний id.
 			latestId = data["id"];
-			for (var i = 0; i < 5; i++) { 
+			for (var i = 0; i < carousel_cfg.randomMoviesNumber; i++) { 
 				(function get(value) {
 					var id = randInt(62, latestId);
 					tmdb.call("/movie/" + id, {}, function (film) { // В случае успешного запроса добавляем фильм.
@@ -56,7 +59,7 @@ $(document).ready( function () {
 						}
 						rMovies[value] = film;
 						threads++;
-						if (threads === 5) {
+						if (threads === carousel_cfg.randomMoviesNumber) {
 							movies = rMovies;
 							activeMovie = 0;
 							filling(movies[0]);		// При получении всех 5 фильмов, заполняем карусель.
@@ -72,7 +75,7 @@ $(document).ready( function () {
 	
 	$("#search").click( function (event) { // Обработка поискового запроса.
 		if (!animationFlag) { // Анимация будет выполняться только один раз при множественном нажатии.
-			$("#content").fadeOut(700);
+			$("#content").fadeOut(carousel_cfg.fadingTime);
 			animationFlag = true;
 		}
 		var query = $("#query").val();
@@ -88,12 +91,12 @@ $(document).ready( function () {
 			"query" : query
 		}, function (data) {
 			if (data.total_results === 0) {
-				$("#content").fadeIn(700);
+				$("#content").fadeIn(carousel_cfg.fadingTime);
 				setTimeout( function () {
 					$("#content H2").html("По вашему запросу ничего не найдено..");
-				}, 700);
+				}, carousel_cfg.fadingTime);
 				wasEmpty = true;
-				$("#content div").not("#title").fadeOut(300);
+				$("#content div").not("#title").fadeOut(carousel_cfg.emptyFadingTime);
 				return;
 			};
 			movies = data.results;
@@ -107,14 +110,14 @@ $(document).ready( function () {
 	
 	$("#left").click( function () { // Кнопка влево.
 		if (!animationFlag) { 
-			$("#content").fadeOut(700);
+			$("#content").fadeOut(carousel_cfg.fadingTime);
 			animationFlag = true;
 		}
 		activeMovie--;
 		if (activeMovie === 0) {
 			$("#left").attr("disabled", true);
 		};
-		if (activeMovie === movies.length - 2 || activeMovie === 8) {
+		if (activeMovie === movies.length - 2 || activeMovie === carousel_cfg.enableRight()) {
 			$("#right").attr("disabled", false);
 		};
 		filling(movies[activeMovie]);
@@ -122,14 +125,14 @@ $(document).ready( function () {
 	
 	$("#right").click( function () { // Кнопка вправо.
 		if (!animationFlag) {
-			$("#content").fadeOut(700);
+			$("#content").fadeOut(carousel_cfg.fadingTime);
 			animationFlag = true;
 		}
 		activeMovie++;
 		if (activeMovie === 1) {
 			$("#left").attr("disabled", false);
 		}
-		if (activeMovie === movies.length - 1 || activeMovie === 9) {
+		if (activeMovie === movies.length - 1 || activeMovie === carousel_cfg.disableRight()) {
 			$("#right").attr("disabled", true);
 		}
 		filling(movies[activeMovie]);
