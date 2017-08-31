@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>GitHubApi</title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<link rel="stylesheet" type="text/css" href="css/info.css" />
+		<link rel="stylesheet" type="text/css" href="css/localInfo.css" />
+		<script src="js/consts.js"></script>
+		<script src="js/jQuery.js"></script>
+		<script src="js/githubapi.js"></script>
+		<script src="js/newUserConstructor.js"></script>
+		<script src="js/info.js"></script>
+		<script src="js/loadLocal.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/quote.js"></script>
+		<script src="js/add_show.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiJlyrzVIqHGwOcc6Q838dcJT_Bo_JmNo&libraries=places" async></script>
+		<script src="js/user.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="workspace">
+				<div id="searchLine">
+					<form>
+						<input type="text" required />
+						<input type="button" id="search" value="search">
+					</form>
+				</div>
+				<div id="users">
+				</div>
+			</div>
+			<div id="quoteBlock">
+				<input type="button" id="show-quote" value="quote"></input>
+				<span id="quote"></span>
+			</div>
+			<input type="button" id="switch" value="add user">
+			</input>
+		</div>
+	</body>
+</html>

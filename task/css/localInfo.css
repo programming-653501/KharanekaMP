@@ -1,0 +1,38 @@
+.local {
+  position: relative;
+  border: 1px solid black;
+  padding: 0.5em;
+  font-size: 20px;
+  background-color: #e0e0ff;
+  min-height: 6em; }
+  .local #assign {
+    position: absolute;
+    right: 5px;
+    top: 5px; }
+  .local #info {
+    max-width: 60%;
+    display: inline-block;
+    position: absolute; }
+  .local p {
+    display: inline-block;
+    height: 1em;
+    margin-bottom: 1px;
+    margin-top: 1px; }
+  .local table {
+    margin-left: 1em;
+    font-size: 0.5em;
+    display: inline;
+    width: 100%; }
+  .local .imgBox {
+    position: relative;
+    display: inline-block;
+    height: 7em;
+    width: 6em; }
+    .local .imgBox img {
+      height: 6em;
+      display: block; }
+    .local .imgBox p {
+      position: absolute;
+      top: 6em; }
+
+/*# sourceMappingURL=localInfo.css.map */

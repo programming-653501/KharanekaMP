@@ -1,0 +1,97 @@
+#main {
+	.techTag {
+		white-space : nowrap;
+		position : relative;
+		display : inline-block;
+		margin : {
+			left : 1em;
+		}
+		height : 1em;
+		background-color : #d0d0ff;
+		.crossSpace {
+			position : absolute;
+			right : 0px;
+			top : 0px;
+			cursor : pointer;
+			background-color : #d0d0ff;
+			display : inline;
+			font-size : 0.8em;
+			color : white;
+			text-align : center;
+			line-height : 1em;
+			height : 1em;
+		}
+	}
+	
+	#searchLine {
+		height : 1.5em;
+	}
+	#workspace {
+		#addHeader {
+			height : 1em;
+			font : {
+				family : Verdana;
+				Size : 1em;
+			}
+		}
+		#newUser {
+			td {
+				width : 50px;
+			}
+			td, tr {
+				min-height : 2em;
+			}
+			#buttonBox {
+				position : relative;
+				input {
+					position : absolute;
+					right : 0px;
+				}
+			}
+		}
+		#users {
+			padding : 0px;
+			width : 50%;
+			height : 400px;
+			overflow : scroll;
+			overflow-x : hidden;
+			border: 1px solid black;
+			margin : {
+				top : 0.5em;
+			}
+			
+			span {
+				font-size : 0.5em;
+			}
+				a {
+					text-decoration : none;
+					font-size : 20px;
+					color : #000;
+					
+					.users {
+					border : 1px solid black;
+						min-height : 6em;
+						padding : 0.5em;
+						p {
+							font-size : inherit;
+							margin  : {
+								top : 0;
+								bottom : 0;
+							}
+						}			
+						img {
+							display : block;
+						//	float : left;
+							height : 6em;
+						}
+					}
+				}	
+		}
+	}
+	#quoteBlock {
+		margin-top : 0.5em;
+		#quote {
+			display : none;
+		}
+	}
+}

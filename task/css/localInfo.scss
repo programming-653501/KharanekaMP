@@ -1,0 +1,47 @@
+.local {
+	position : relative;
+	border : 1px solid black;
+	#assign {
+		position : absolute;
+		right : 5px;
+		top : 5px;
+	}
+	padding : 0.5em;
+	font-size : 20px;
+	background-color : #e0e0ff;
+	#info {
+		max-width : 60%;
+		display : inline-block;
+		position : absolute;
+		
+	}
+	min-height : 6em;
+	p {
+		display : inline-block;
+		height : 1em;
+		margin : {
+			bottom : 1px;
+			top : 1px;
+		}
+	}
+	table {
+		margin-left : 1em;
+		font-size : 0.5em;
+		display : inline;
+		width : 100%;
+	}
+	.imgBox {
+		position : relative;
+		display : inline-block;
+		height : 7em;
+		width : 6em;
+		img {
+			height : 6em;
+			display : block;
+		}
+		p{
+			position : absolute;
+			top : 6em;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+#main .techTag {
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  margin-left: 1em;
+  height: 1em;
+  background-color: #d0d0ff; }
+  #main .techTag .crossSpace {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    background-color: #d0d0ff;
+    display: inline;
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+    line-height: 1em;
+    height: 1em; }
+#main #searchLine {
+  height: 1.5em; }
+#main #workspace #addHeader {
+  height: 1em;
+  font-family: Verdana;
+  font-Size: 1em; }
+#main #workspace #newUser td {
+  width: 50px; }
+#main #workspace #newUser td, #main #workspace #newUser tr {
+  min-height: 2em; }
+#main #workspace #newUser #buttonBox {
+  position: relative; }
+  #main #workspace #newUser #buttonBox input {
+    position: absolute;
+    right: 0px; }
+#main #workspace #users {
+  padding: 0px;
+  width: 50%;
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 1px solid black;
+  margin-top: 0.5em; }
+  #main #workspace #users span {
+    font-size: 0.5em; }
+  #main #workspace #users a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000; }
+    #main #workspace #users a .users {
+      border: 1px solid black;
+      min-height: 6em;
+      padding: 0.5em; }
+      #main #workspace #users a .users p {
+        font-size: inherit;
+        margin-top: 0;
+        margin-bottom: 0; }
+      #main #workspace #users a .users img {
+        display: block;
+        height: 6em; }
+#main #quoteBlock {
+  margin-top: 0.5em; }
+  #main #quoteBlock #quote {
+    display: none; }
+
+/*# sourceMappingURL=info.css.map */
