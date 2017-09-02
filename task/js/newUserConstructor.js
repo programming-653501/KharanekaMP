@@ -1,4 +1,4 @@
-﻿(function () {
+﻿(function () { // Объект локального юзера.
 ghapp.NewUser = function () {
 	this.userName = {
 		"done" : false,

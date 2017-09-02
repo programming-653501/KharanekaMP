@@ -1,3 +1,4 @@
+// Обработка ввода информации и добавления локального юзера +валидация.
 $(document).ready( function () {
 	$("#workspace").on("change", "#avatar", function (evt) {
 		var avatar = $("#avatar");

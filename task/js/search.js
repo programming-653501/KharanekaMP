@@ -1,4 +1,4 @@
-$(document).ready( function () {
+$(document).ready( function () { // Поиск, разметка задается при помощи ghapp.getUserElement из info.js
 	$("#workspace").on("click", "#search", function () {
 		var i;
 		$("#users").html("");

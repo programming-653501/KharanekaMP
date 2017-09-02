@@ -1,4 +1,4 @@
-(function () {
+(function () { //Обертка для гитхаб апи.
 	window.ghapi = {
 		"root" : "https://api.github.com",
 		load : function (command, inf, succ, err, q) {

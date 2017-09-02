@@ -1,4 +1,4 @@
-$(document).ready( function () {
+$(document).ready( function () { // Показ цитаты + анимация.
 	$("#show-quote").click( function () { 
 		ghapi.load("/zen", {}, function (data) {
 			$("#quote").html(data).fadeIn(ghapp.consts.quote_fading_time);

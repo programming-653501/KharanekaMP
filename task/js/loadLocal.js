@@ -1,4 +1,4 @@
-ghapp.loadLocal = function () {
+ghapp.loadLocal = function () { // Подгрузка локальных юзеров.
 	var regexp = /user[0-9]+/;
 	for (var user in localStorage) {
 		if(regexp.test(user)) {

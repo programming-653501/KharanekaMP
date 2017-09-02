@@ -1,4 +1,4 @@
-ghapp.getUserElement = function (conf) {
+ghapp.getUserElement = function (conf) { //Разметка для одного юзера github.
 	var $el;
 	$el = $("<div></div>")
 	.attr("class", "users")
@@ -9,7 +9,7 @@ ghapp.getUserElement = function (conf) {
 	.html(conf.name));
 	return "<a href='" + conf.ref + "' target='_blank'>" + $el[0].outerHTML + "</a>";
 }
-ghapp.getLocalUserElement = function (local) {
+ghapp.getLocalUserElement = function (local) { //Разметка для одного локального юзера.
 	var $el;
 	var user = JSON.parse(localStorage["user" + local]);
 	$el = $("<div>")

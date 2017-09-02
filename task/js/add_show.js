@@ -1,4 +1,4 @@
-$(document).ready( function () {
+$(document).ready( function () { // Переключение между поиском и добавлением.
 	$("#main #switch").click( function () {
 		if (!ghapp.input) {
 			ghapp.input = true;
