@@ -5,11 +5,11 @@
   font-size: 20px;
   background-color: #e0e0ff;
   min-height: 6em; }
-  .local #assign {
+  .local .assign {
     position: absolute;
     right: 5px;
     top: 5px; }
-  .local #info {
+  .local .info {
     max-width: 60%;
     display: inline-block;
     position: absolute; }

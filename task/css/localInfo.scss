@@ -1,7 +1,7 @@
 .local {
 	position : relative;
 	border : 1px solid black;
-	#assign {
+	.assign {
 		position : absolute;
 		right : 5px;
 		top : 5px;
@@ -9,7 +9,7 @@
 	padding : 0.5em;
 	font-size : 20px;
 	background-color : #e0e0ff;
-	#info {
+	.info {
 		max-width : 60%;
 		display : inline-block;
 		position : absolute;

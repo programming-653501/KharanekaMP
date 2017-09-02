@@ -1,13 +1,13 @@
-ghapp.getUserElement = function (avatar_path, name, ref, el_id) {
+ghapp.getUserElement = function (conf) {
 	var $el;
 	$el = $("<div></div>")
 	.attr("class", "users")
-	.attr("id", el_id)
+	.attr("id", conf.el_id)
 	.append($("<img></img>")
-	.attr("src", avatar_path))
+	.attr("src", conf.avatar_path))
 	.append($("<p>")
-	.html(name));
-	return "<a href='" + ref + "' target='_blank'>" + $el[0].outerHTML + "</a>";
+	.html(conf.name));
+	return "<a href='" + conf.ref + "' target='_blank'>" + $el[0].outerHTML + "</a>";
 }
 ghapp.getLocalUserElement = function (local) {
 	var $el;
@@ -15,13 +15,13 @@ ghapp.getLocalUserElement = function (local) {
 	$el = $("<div>")
 	.attr("class", "local")
 	.attr("id", local)
-	.append("<div id='assign'>local</div>")
+	.append("<div class='assign'>local</div>")
 	var $imgBox = $("<div>").attr("class", "imgBox");
 	$imgBox.append($("<img>").attr("src", user.avatar.value));
 	$imgBox.append($("<p>")
 	.html(user.userName.value));
 	$el.append($imgBox);
-	var $div = $("<div id='info'>");
+	var $div = $("<div class='info'>");
 	var $t = $("<table>");
 	for (var prop in user) {
 		if (user.hasOwnProperty(prop) && prop != "tech" && prop != "avatar" && prop != "userName") {

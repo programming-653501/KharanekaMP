@@ -1,5 +1,5 @@
 $(document).ready( function () {
-	$("#workspace").on("click", "#searchLine #search", function () {
+	$("#workspace").on("click", "#search", function () {
 		var i;
 		$("#users").html("");
 		ghapi.load("/search/users", {
@@ -10,7 +10,12 @@ $(document).ready( function () {
 				$("#users").html("<h2>К сожалению, ничего не найдено</h2>");
 			}
 			for (i = 0; i < (data.total_count < ghapp.consts.users_shows ? data.total_count : ghapp.consts.users_shows); i++) {
-				$("#users").append(ghapp.getUserElement(data.items[i].avatar_url, data.items[i].login, data.items[i].html_url, "gituser" + i));
+				$("#users").append(ghapp.getUserElement( {
+					avatar_path : data.items[i].avatar_url, 
+					name : data.items[i].login,
+					ref : data.items[i].html_url,
+					el_id : "gituser" + i
+				}));
 			}
 			ghapp.loadLocal();
 		}, function () {
