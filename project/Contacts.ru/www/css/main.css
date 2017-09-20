@@ -1,0 +1,38 @@
+.app {
+  margin-left: 15%;
+  width: 70%; }
+  .app .item, .app #header {
+    width: 100%;
+    height: 2.5em;
+    border-bottom: 2px solid #EEEEEE;
+    padding-top: 1.25em;
+    position: relative;
+    top: 3.5em;
+    z-index: 1; }
+    .app .item .name, .app #header .name, .app .item .surname, .app #header .surname {
+      position: absolute;
+      width: 10em; }
+    .app .item .name, .app #header .name {
+      left: 5%; }
+    .app .item .surname, .app #header .surname {
+      left: 25%; }
+    .app .item .buttons, .app #header .buttons {
+      position: absolute;
+      left: 45%; }
+  .app #header {
+    position: fixed;
+    top: 0;
+    width: 70% !important;
+    background-color: #BCD3FF;
+    font-weight: bold;
+    z-index: 2; }
+    .app #header .first, .app #header .second, .app #header .switch {
+      position: absolute; }
+    .app #header .first {
+      left: 5%; }
+    .app #header .second {
+      left: 25%; }
+    .app #header .switch {
+      left: 45%; }
+
+/*# sourceMappingURL=main.css.map */

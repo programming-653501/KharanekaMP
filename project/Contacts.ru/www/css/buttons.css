@@ -1,0 +1,26 @@
+.app {
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif; }
+  .app .button, .app .button:hover, .app .button:active {
+    padding: 4px 16px 5px;
+    font-size: 12.5px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    background-color: #000a77;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box; }
+  .app .button:hover {
+    background-color: #332C77 !important; }
+  .app .button:active {
+    background-color: #9E9E9E !important; }
+
+/*# sourceMappingURL=buttons.css.map */

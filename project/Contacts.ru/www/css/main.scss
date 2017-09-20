@@ -1,0 +1,62 @@
+.app {
+    margin: {
+        left: 15%;
+    }
+    width: 70%;
+    
+    .item {
+        $item-height: 2.5em;
+        $button-width: 5em;
+        $start-margin: 5%;
+        width: 100%;
+        height: $item-height;
+        border-bottom: 2px solid #EEEEEE;
+        padding: {
+            top: $item-height/2;
+        }
+        position: relative;
+        top: $item-height + 1em;
+        z-index: 1;
+        .name, .surname{
+            position: absolute;
+            width: 10em;
+        }
+        .name {
+            left: $start-margin;
+        }
+        .surname {
+            left: $start-margin + 20%;
+        }
+
+        .buttons {
+            position: absolute;
+            left: $start-margin + 20%*2;
+        }
+    }
+    #header {
+        @extend .item;
+        position: fixed;
+        top : 0;
+        width : 70% !important;
+        background-color: #BCD3FF;
+        font-weight: bold;
+        z-index: 2;
+        .first, .second, .switch {
+            position: absolute;
+        }
+        .first {
+            left: 5%;
+        }
+        .second {
+            left: 25%;
+        }
+        .switch {
+            left: 45%;  
+        }
+    }
+}
+
+
+
+
+

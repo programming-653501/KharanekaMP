@@ -1,0 +1,27 @@
+#sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.53); }
+
+#showCont, #editCont {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  z-index: 4;
+  background-color: white;
+  border: 1px solid black;
+  height: 150px;
+  padding: 10px 10px 10px; }
+  #showCont td, #editCont td {
+    border-bottom: 2px solid #EEEEEE; }
+    #editCont input{
+      border : 1px solid #dddddd;}
+
+#editCont td:nth-child(even) {
+  border-bottom: none !important; }
+
+/*# sourceMappingURL=show.css.map */
