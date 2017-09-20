@@ -1,7 +1,7 @@
 var app = app || {};
 (function () {
     app.ItemView = Backbone.View.extend({
-       
+
         itemTemplate : _.template($("#item-templ").html()),
 
         initialize : function () {
@@ -19,6 +19,7 @@ var app = app || {};
 
         deleteModel : function () {
             this.model.destroy();
+            app.mainView.render();
         }
     });
 }());
