@@ -7,10 +7,6 @@ var app = app || {};
         initialize : function () {
             this.$main = $("#main");
             this.$header = $("#header");
-            this.listenTo(app.contacts, "addNew", this.addContact);
-            this.listenTo(app.contacts, "reset", this.addAll);
-            this.listenTo(app.contacts, "show", this.showContact);
-            this.listenTo(app.contacts, "edit", this.editContact);
 
 
             app.contacts.fetch({reset : true});
@@ -20,22 +16,14 @@ var app = app || {};
         routes : {
             "" : "index",
             "contacts" : "index",
-            "contacts/add" : "add",
-            "contacts/:id" : "show",
-            "contacts/:id/edit" : "edit",
+            "contacts/add" : "addContact",
+            "contacts/:id" : "showContact",
+            "contacts/:id/edit" : "editContact",
         },
         index : function () {
             app.mainView.render();
         },
-        show : function (id) {
-            app.contacts.trigger("show", id);
-        },
-        edit : function (id) {
-            app.contacts.trigger("edit", id);
-        },
-        add : function () {
-            app.contacts.trigger("addNew");
-        },
+
         addOne : function (contact) {
             var view = new app.ItemView({model : contact});
             this.$main.append(view.render().el);
